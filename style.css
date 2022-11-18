@@ -1,0 +1,376 @@
+/*Обнуление*/
+*,
+*::before,
+*::after {
+	padding: 0;
+	margin: 0;
+	border: 0;
+	box-sizing: border-box;
+}
+a {
+	text-decoration: none;
+}
+ul,
+ol,
+li {
+	list-style: none;
+}
+img {
+	vertical-align: top;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-weight: inherit;
+	font-size: inherit;
+}
+html,
+body {
+	height: 100%;
+	line-height: 140%;
+	font-size: 18px;
+	color: #0D106F;
+   font-family: 'Rubik', sans-serif;
+   background: #EEF5F9  ;
+}
+
+/*Для оболочки и футера +для скролла */
+.wrapper {
+	min-height: 100%;
+	overflow: hidden;
+}
+.container {
+	max-width: 1100px; /* padding не входит в ширину тк box-sizing: content-box */
+	margin: 0px auto;
+	padding: 0px 15px; /* Чтобы не было прилипания к контенту */
+	box-sizing: content-box; /* Чтобы не прибавлять 30px k max-widxt - padding  не будет входить в размер 1046px */
+}
+img {
+width: 100%;
+   object-fit: cover;
+   height: 100%;
+}
+/* header */
+.header {
+   width: 100%;
+   height: 80px;
+   background-color: #464AD0;
+   clip-path: polygon(0% 15%, 0 0, 15% 0%, 85% 0%, 100% 0, 100% 15%, 100% 100%, 89% 81%, 75% 84%, 53% 69%, 37% 64%, 0 66%);
+}
+.container {
+}
+.header__menu {
+}
+.menu__list {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   flex-wrap: wrap;
+}
+.menu__link {
+   display: block;
+   padding: 20px 10px;
+   text-transform: uppercase;
+}
+
+.menu__link a {
+   color: #fff;
+   letter-spacing: 0.2em;
+}
+.menu__link a:hover {
+   font-weight: 600;
+   transition: color  1s ease 0s ;
+  border-bottom: 2px dotted #B7E4FF ;
+}
+/* section about  */
+.about {
+   padding: 40px 0px;
+}
+.container {
+}
+.about__content {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+.about__foto {
+   max-width: 300px;
+   flex: 0 1 40%;
+   padding: 0px 20px 0px 0px;
+   clip-path: polygon(6% 38%, 15% 16%, 27% 4%, 68% 0, 80% 4%, 90% 28%, 94% 57%, 89% 81%, 72% 92%, 55% 100%, 19% 100%, 0 66%);
+}
+.about__text {
+   flex: 0 1 60%;
+}
+.about__text p {
+   font-size: 30px;
+   line-height: 160%;
+}
+
+h1 {
+   font-size: 30px;
+   line-height: 150%;
+   margin: 0px 0px 10px 0px;
+   font-weight: 700;
+   text-transform: uppercase;
+}
+
+/*.skills contacts */
+
+.skills {
+   padding: 40px 0px;
+   display: flex;
+  justify-content: flex-start;
+   align-items: center;
+}
+.skills h3 {
+   text-align: left;
+}
+h3 {
+   font-weight: 600;
+   font-size: 24px;
+   text-transform: uppercase;
+   padding: 0px 0px 20px 0px;
+   text-align: center;
+   color: #0D106F;
+}
+
+.contacts {
+   padding: 0px 130px 0px 50px;
+   flex: 0 1 50%;
+}
+.contacts, .skills__list  {
+   line-height: 170%;
+}
+.contacts a { 
+   display: block;
+   color: inherit;
+}
+.contacts span {
+   font-weight: 700;
+}
+.contacts a:hover {
+   border-bottom: 2px dotted #0D106F ;
+}
+.email {
+}
+.telegramm {
+}
+.github {
+}
+.skills__content {
+   flex: 0 1 50%;
+}
+.skills__list {
+}
+.skills__link {
+   list-style: square;
+}
+/*code__example  */
+.code__example h3 {
+   padding: 30px 0px 0px 0px;
+   color: #fff;
+}
+.code__example {
+   height: 100%;
+   color: #fff;
+   background-color: #464AD0;
+   width: 100%;
+   clip-path: polygon(0 2%, 13% 8%, 36% 7%, 55% 0, 83% 4%, 100% 0, 100% 53%, 100% 100%, 74% 92%, 44% 97%, 19% 95%, 0 99%);
+}
+/* .projects */
+.projects1 {
+   padding: 0px 0px 40px 0px;
+   
+}
+.projects {
+   display: grid;
+   grid-template: 1fr 1fr/minmax(auto,450px) minmax(auto,450px);
+   justify-content: center;
+   align-items: center;
+   gap: 20px;
+}
+.projects1 p {
+   color: #0D106F;
+}
+h4 {
+   font-weight: 600;
+   font-size: 20px;
+   text-transform: uppercase;
+   padding: 0px 0px 10px 0px;
+   text-align: center;
+   color: #0D106F;
+}
+.container {
+}
+.projects2 {
+   border: 4px dashed #0D106F;
+   padding: 20px 20px;
+
+}
+
+.resume {
+ 
+   
+}
+.button__link {
+   padding-top: 7px;
+}
+.button {
+   display: inline-block;
+   padding: 10px 10px;
+   background-color: #0D106F;
+   text-transform: uppercase;
+   color: #fff;
+   letter-spacing: 0.1em;
+   font-size: 14px;
+}
+.button:hover {
+   transition: all 0.5s ease 0s;
+   border: 3.5px solid #0D106F;
+   background-color: #EEF5F9;
+   color: #0D106F;
+}
+button a {
+
+}
+button a:hover {
+   color: #0D106F;
+   transition: all 0.5s ease 0s;
+}
+.resume p {
+  z-index: 2;
+}
+.bis {
+}
+.fitness {
+}
+.ytyt {
+}
+
+/*education language  */
+.education__courses {
+   display: flex;
+   justify-content: center;
+}
+.container {
+}
+.education {
+   flex: 0 1 50%;
+   margin: 0px 60px 0px 0px;
+}
+.education__item {
+   line-height: 180%;
+}
+.education__item span {
+   font-weight: 600;
+}
+.language {
+   flex: 0 1 50%;
+}
+.languag__skill {
+   
+}
+.languag__item {
+   list-style-type: square;
+   line-height: 180%;
+}
+
+/*footer*/
+.footer {
+   width: 100%;
+   height: 120px;
+   background-color: #464AD0;
+   clip-path: polygon(0 32%, 15% 16%, 36% 31%, 67% 17%, 84% 4%, 100% 10%, 100% 53%, 100% 100%, 78% 100%, 55% 100%, 19% 100%, 0 100%);
+}
+.footer__content {
+   padding: 40px 15px 0px 15px;
+   display: flex;
+   align-items: flex-end;
+   justify-content: space-between;
+}
+.logo {
+   display: block;
+}
+.logo img {
+   width: 150px;
+   bottom: 0;
+}
+.github__link {
+   padding: 0px 0px 0px 15px;
+}
+.github__link a {
+   color: #fff;
+   letter-spacing: 0.12em;
+
+}
+
+.github__link a:hover {
+   border-bottom: 2px dashed #EEF5F9;
+   font-weight: 600;
+}
+.footer__text {
+   color: #fff;
+   letter-spacing: 0.12em;
+}
+
+/* адаптив*/
+@media (max-width:920.98px) {
+   .menu__link {
+      font-size: 14px;
+      padding: 20px 8px;
+      letter-spacing: 0em;
+   }
+}
+@media (max-width:762.98px) {
+.header {
+display: none;
+}
+
+.about__content {
+ 
+   align-items: flex-start;
+}
+.about {
+   padding: 10px 0px;
+}
+.about__foto {
+   
+
+}
+.about__foto img {
+ 
+   
+}
+.about__text p {
+   font-size: 20px;
+}
+.contacts {
+   padding: 0px 30px 0px 30px;
+}
+body {
+   font-size: 16px;
+}
+h1 {
+   font-size: 26px;
+}
+h3 {
+   font-size: 20px;
+}
+h4 {
+   font-size: 16px;
+}
+.button {
+   font-size: 12px;
+}
+.projects {
+   display: block;
+ 
+}
+.projects2 {
+  margin: 0px 0px 10px 0px;
+}
+}
